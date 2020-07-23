@@ -1,0 +1,60 @@
+html, body{
+    margin: 0;
+}
+
+.nav{
+    text-align: right;
+    height: 70px;
+    line-height: 70px;
+    background-color: blue;
+}
+
+.menu{
+    margin-right: 30px;
+}
+
+.menu a{
+    text-decoration: none;
+    color: black;
+    margin: 0 10px;
+    line-height: 70px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+    background-color: blue;
+}
+
+label{
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+}
+
+#toggle {
+    display: none;
+}
+
+@media only screen and (max-width: 618px) {
+
+    label{
+        display: block;
+    }
+
+    .menu{
+        text-align: center;
+        width: 100%;
+        background-color: #34aa17;
+        display: none;
+    }
+
+    .menu a{
+        display: block;
+        border-bottom: 1px solid #EAEAEB;
+        margin: 0;
+    }
+
+    #toggle:checked + .menu {
+        display: block;
+    }
+}
